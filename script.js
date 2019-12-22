@@ -11,6 +11,7 @@ window.onload = function () {
         });
     }
 
+
     document.getElementById('koszyk').addEventListener('click', function (e) {
         if (e.target.classList.contains('remove-product')) {
             removeElement(e.target);
@@ -26,6 +27,9 @@ window.onload = function () {
         let productRemoveButtonToAdd = document.createElement('button');
         productRemoveButtonToAdd.textContent = 'Usuń z koszyka';
         productRemoveButtonToAdd.classList.add('remove-product');
+
+
+
 
         let nameOfProduct = parentOfProduct.firstElementChild;
         let priceOfProduct = nameOfProduct.nextElementSibling;
@@ -52,9 +56,24 @@ window.onload = function () {
         sum -= parseFloat(clickedElement.previousElementSibling.textContent);
         updateSum(sum);
     }
+/*----------------------------------------------------------------------*/
+
+/*  ;
+
+        let wartosc = document.getElementById('name').value;
+
+
+        if (wartosc.length >= 8) {
+            console.log('Poprawna wartość');
+            document.getElementById('error').setAttribute('hidden', '');
+            e.currentTarget.submit();
 
 
 
+        }
+
+    });
+};*/
 
 
 
